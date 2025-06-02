@@ -15,3 +15,14 @@ console.log(sobrenome)
 sobrenome = 'oliveira'
 
 console.log(sobrenome);
+
+
+
+// Não podemos criar variáveis com palavras reservadas
+// Variaveis precisam ter nomes significativos
+// Não pode começar o nome de uma variável com um número
+// Não podem conter espaços ou traços 
+// Utilizamos camelCase
+// Case-sensitive
+// Não podemos redeclarar uma variável com let
+// Não utilizar VAR, utilizar LET para algo que vai variar
