@@ -58,3 +58,11 @@ let raiz = function (n) {
 console.log(raiz(9));
 console.log(raiz(81));
 console.log(raiz(144));
+
+// agora uma maneira bem rapida para quando a funcao for curta e tamem tiver só um parametro é:
+
+const Raiz = n => n ** 0.5;
+// funciona da mesma forma, entretanto é para funcoes curtas
+console.log(Raiz(9));
+console.log(Raiz(81));
+console.log(Raiz(144));
