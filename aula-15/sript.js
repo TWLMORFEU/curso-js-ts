@@ -29,4 +29,5 @@ function soma(x, y) {
     return resultado;
 }
 
-console.log
+console.log(soma(2, 8)); // os numeros irao substituir o x e y
+console.log(resultado); // nao funciona pos meciona uma variavel no scopo local, se foi declarado lá, só funciona lá
