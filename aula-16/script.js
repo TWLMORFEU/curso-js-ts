@@ -50,3 +50,29 @@
  
 // função dentro de objeto = método
 // dentro de objeto, não precisa declarar função com function
+
+const names1 = {
+    nome: 'Luiz',
+    sobrenome: 'Miranda',
+    idade: 25,
+
+    fala() { // pode declarar uma função dessa maneira
+
+    }
+};
+
+pessoa1.fala();
+
+/* {$this} = nesse contexto, que se refere ao nome do objetosem mencionar seu nome */
+
+const names1 = {
+    nome: 'Luiz',
+    sobrenome: 'Miranda',
+    idade: 25,
+
+    fala() { // pode declarar uma função dessa maneira
+
+    }
+};
+
+pessoa1.fala();
