@@ -65,31 +65,24 @@
 
 /* ${this} = nesse contexto, que se refere ao nome do objetosem mencionar seu nome */
 
-const names2 = {
+const names5 = {
     nome: 'Luiz',
     sobrenome: 'Miranda',
     idade: 25,
 
     fala() { 
-       console.log(`${this.nome} ${this.sobrenome} está falando oi...`);
-    }
-};
-
-names2.fala();
-
-
-const names3 = {
-    nome: 'Luiz',
-    sobrenome: 'Miranda',
-    idade: 25,
-
-    fala() { 
-       console.log(`A minha idade é ${this.idade}.`);
+       console.log(`A miha idade atual é ${this.idade}.`);
     },
 
     incrementaIdade() {
-        
+        this.idade++;
     }
 };
 
-names3.fala();
+names5.fala(); // aparecerá a idade sem mudanças
+
+names5.incrementaIdade(); // Agora que mandou ira mudar 
+
+names5.fala(); // agora foiadicionado + 1
+
+// As funções so executam quando mandam, como se fose varias funcionalidades mas só entram em pratica quando mencionadas
