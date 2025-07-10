@@ -14,7 +14,7 @@ frm.addEventListener("submit", (e) => {
 */
 // const dados [nome, sobrenome, peso, altura];// errado
 
-// Corrigindo
+// ----- Corrigindo -----
 
 const frm = document.querySelector("form");
 const resp = document.querySelector("h3");
@@ -31,7 +31,7 @@ frm.addEventListener("submit", (e) => {
   const altura = frm.iAltura.value;
 
   // Exibe no h3 com quebra de linha correta
-  resp.innerText = `Seu nome: ${nome}\nSeu sobrenome: ${sobrenome}\nSeu peso: ${peso}\nSua altura: ${altura}`;
+  resp.innerText += `\nSeu nome: ${nome}\nSeu sobrenome: ${sobrenome}\nSeu peso: ${peso}\nSua altura: ${altura}\n`;
 
   // Salva no array (pode salvar como objeto)
   dados.push({
@@ -67,3 +67,37 @@ frm.addEventListener("submit", (e) => {
 */
 
 // Dessa forma também funciona
+
+
+// --------   método do curso   ---------
+
+/*
+function meuEscopo () {
+
+const form = document.querySelector('.form');
+const resultado = document.querySelector('.resultado);
+
+const pessoas = []
+
+function recebeEventoForm (evento) {
+ evento.prevenDefault();
+
+ const nome = form.querySelector('.nome');
+ const sobrenome = form.querySelector('.sobrenome');
+ const peso = form.querySelector('.peso');
+ const altura = form.querySelector('.altura');
+
+  pessoas.push({
+   nome: nome.nodeValue,
+   sobrenome: sobrenome.value, 
+   peso: peso.value,
+   altura: altura.value
+  });
+
+  console.log(pessoas);
+
+  resultado.innerHTML += `<p>${nome.value} ${sobrenome.value}`
+  `${peso.value} ${altura.value}</p>`;
+}
+}
+*/
