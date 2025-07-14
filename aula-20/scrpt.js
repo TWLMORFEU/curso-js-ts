@@ -20,3 +20,8 @@ const senha =  '12s3d5'; // form usuario digitou
 /* para logar, o usuario e senha teêm que corresponder aos dois dados  */
 const vaiLogar = usuario === 'Luiz' && senha ==='12s3d5';
 console.log(vaiLogar);
+
+
+console.log(!false);// esta negando o false e sera true
+console.log(!true); // esta negando true, sera false 
+console.log(!!false); // vira true e false denovo
