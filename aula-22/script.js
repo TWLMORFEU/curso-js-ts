@@ -20,7 +20,7 @@ if ( hora > 6 && hora < 12) {
 // Eu posso ter vários elss ifs na chegagem
 // Só pode utilizarum else sozinho 
 
-let TenhoDinheiro = ;
+let TenhoDinheiro = NaN;
 
 if (TenhoDinheiro) {
     console.log("Vou sair de casa");
