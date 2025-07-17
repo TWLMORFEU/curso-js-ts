@@ -1,9 +1,10 @@
 /*
-Operadores lògicos
-&& -> AND -> E -> Toas as expressões tem que ser verdadeiras para retornar True
+Operadores lógicos
+&& -> AND -> E -> Todas as expressões tem que ser verdadeiras para retornar True
 || -> Or -> Ou
 ! -> Not -> Não
 */
+
 let expressao = true && true && false && true;
 console.log(expressao); // falsw
 expressao = true && true && true && true;
@@ -22,6 +23,6 @@ const vaiLogar = usuario === 'Luiz' && senha ==='12s3d5';
 console.log(vaiLogar);
 
 
-console.log(!false);// esta negando o false e sera true
+console.log(!false); // esta negando o false e sera true
 console.log(!true); // esta negando true, sera false 
 console.log(!!false); // vira true e false denovo

@@ -1,6 +1,6 @@
 /*
 && -> false && true -> false "o valor mesmo"
-|| -> 
+|| -> true && false -> vai retornar o valor verdadeiro
 
 
 FALSY
@@ -24,6 +24,7 @@ console.log('Manu' && 'lena' && 0 && 'lele' && NaN);
 function falaOi() {
     return 'Oi';
 }
+
 let vaiExecutar = 'Vanessa';
 console.log(vaiExecutar &&  falaOi());
 // vai falar 'oi' pois as duas são verdadeiras então determina a ultima
@@ -32,3 +33,10 @@ vaiExecutar = 0;
 console.log(vaiExecutar &&  falaOi());
 /* por ter um valor falso, ira certificar qual seja e não vai executar a função */
 
+
+
+console.log(0 || false || null || "Luiz Otávio" || true);
+// Ira determinar o valor verdadeiro e apenas o primeiro 
+ 
+// Exemplo
+let corUsuario = null
