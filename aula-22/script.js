@@ -9,8 +9,12 @@ if ( hora > 6 && hora < 12) {
     console.log('Olá, Uma Boa Tarde');
 
 }else {
-    console.log('Olá,Boa Noite');
+    console.log('Olá, Uma Boa Noite');
 }
 
 
 /* Começa com if = se, ao meio else if = senao se, e ao fim apenas senao*/
+
+// If pode ser usado sozinho
+//sempre que utilizo a palavra else, precisa de if antes
+// Eu posso ter vários elss ifs na chegagem
