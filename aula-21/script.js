@@ -40,3 +40,13 @@ console.log(0 || false || null || "Luiz Otávio" || true);
  
 // Exemplo
 let corUsuario = null
+let corPadrao = corUsuario || 'preto';
+console.log(corPadrao); /* preto -> pois é um número verdadeiro */
+
+/* lembrando que o || emprega apenas o primeiro valor verdadeiro */
+
+corUsuario = "vermelho";
+corPadrao = corUsuario || 'preto'; 
+console.log(corPadrao) /* vermelho -> foi o primeiro número verdadeiro encontrado */
+
+/* É como se o && fosse mais fácil para identificar falsos e o || os verdadeiros */
