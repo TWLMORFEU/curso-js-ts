@@ -11,3 +11,23 @@ if (numero >= 0 && numero <= 5) {
 /* Se um console.log por exemplo estiver fora das chaves de processamento lógico, ele não ira depender dela para funcionamento obviamente */
 
 /* ATENÇÃO -> SE EM MEIO AO SEU CÓDIGO LÓGICO, ALGUM CÓDIGO FOR DE CARACTERÍTICA VERDADEIRA, ELE SERA "QUEBRADO" -> o sistema if, else if, else, avalia pela condicional real, que no qual é verdadeira. dentre isso ao achar a verdadeira todo o restante é relevado e vai prsseguir com outra sintaxe */
+
+// se precisa de duas informações específicas crie duas funções 
+/*Use uma função só se os dois conteúdos:
+
+Têm estrutura semelhante,
+
+Serão avaliados da mesma forma (com os mesmos critérios),
+
+Podem ser passados como parâmetro para a função 
+
+--------------- OU ENTÂO ---------------
+
+Use uma função só se os dois conteúdos:
+
+Têm estrutura semelhante,
+
+Serão avaliados da mesma forma (com os mesmos critérios),
+
+Podem ser passados como parâmetro para a função
+*/
