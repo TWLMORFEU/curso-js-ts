@@ -18,3 +18,4 @@ if ( hora > 6 && hora < 12) {
 // If pode ser usado sozinho
 //sempre que utilizo a palavra else, precisa de if antes
 // Eu posso ter vários elss ifs na chegagem
+// Só pode utilizarum else sozinho
