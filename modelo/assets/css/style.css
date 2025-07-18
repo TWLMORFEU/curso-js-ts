@@ -4,40 +4,38 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 0;
-}
-
-:root {
-    --color-01: rgb(156, 189, 228);
-}
-
-body {
-    background-color: var(--color-01);
 }
 
 .container {
-    width: 80vw;
-    color:white;
     display: flex;
-    margin: auto;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    margin: 20% auto;
 }
 
-.container h1 {
-    padding: 0px 0px 10px 0px;
+.header {
+    align-items: center;
+    justify-items: center;
 }
 
-.container p {
-    padding: 10px 0px;
-    line-height:1.3;
-}
-.container form {
-    padding: 10px;
+.header > h1 {
+    padding-bottom: 10px;
 }
 
-.container > form > input {
+.header > p {
+    line-height: 1.3;
+    padding-bottom: 10p;
+}
+
+.inp {
     display: block;
+   justify-items: center;
 }
 
+.inp > form > input {
+    display: block;
+    padding: 3px;
+}
