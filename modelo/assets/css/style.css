@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 0, 0.856);
+
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -13,7 +19,12 @@
     flex-direction: column;
     justify-content: center;
     width: 80vw;
-    margin: 20% auto;
+    margin: 20vh auto;
+    background-color: rgb(176, 216, 253);
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    max-width: 600px;
 }
 
 .header {
@@ -38,4 +49,15 @@
 .inp > form > input {
     display: block;
     padding: 3px;
+    background-color: transparent;
+    border: 1px solid black;
+    width: 40vw;
+    max-width: 400px;
+}
+
+button {
+    margin: 5px 0px;
+    padding: 5px;
+    width: 40vw;
+    border: 2px solid black;
 }
