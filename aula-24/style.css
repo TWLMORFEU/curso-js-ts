@@ -1,1 +1,37 @@
 @charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(49, 2, 2);
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    padding: 20px 0px;
+}
+
+.container {
+    background-color: white;
+    width: 90vw;
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    padding: 20px;
+    margin: 30px 0px;
+    border-radius: 10px;
+}
+
+.listas {
+    display: flex;
+    margin: 10px 0px;
+    line-height: 1.5;
+    
+}
+
