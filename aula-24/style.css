@@ -67,3 +67,10 @@ h2 {
     transition: 0.3s;
     font-weight: bolder;
 }
+
+.paragrafo-resultado {
+    background: rgb(0, 255, 13);
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
