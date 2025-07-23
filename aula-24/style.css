@@ -68,9 +68,19 @@ h2 {
     font-weight: bolder;
 }
 
+.bad {
+    background-color: red;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
 .paragrafo-resultado {
     background: rgb(0, 255, 13);
     padding: 10px 20px;
     text-align: center;
     margin-top: 20px;
+    font-weight: bolder;
 }
+
