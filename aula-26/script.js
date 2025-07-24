@@ -26,3 +26,15 @@ RESULTAND0 EM: 10.800.000 milissegundos
 
 const data = new Date(2019, 3, 20, 15, 14, 27);
 console.log(data.toString())
+
+/* Caso nos segundos for colocado mais de 999, por exemplo, no lugar do 27, fosse 1000, o js corrigiria pois ja iria considerar 1 segundo e isso não existe */
+
+/*Da mesma forma que deixar 60 segundos ira acrescentar um minuto */
+
+// se não colocar os dados ele considera 0 em tempo e 1 em data
+
+// se deixar só o ano ex Date(2019) ele ira considerar como milissemos desegundo
+
+/*
+estrutura - (ano, mes, dia, hora, minuto,) 
+*/
