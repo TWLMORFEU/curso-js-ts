@@ -24,7 +24,7 @@ RESULTAND0 EM: 10.800.000 milissegundos
 
 //Número do Mês 1 a menos, janeiro ao invés de ser 1 é 0
 
-const data = new Date(2019, 3, 20, 15, 14, 27);
+const data = new Date(2019, 3, 20, 15, 14, 27); // sem zero a esquerda
 console.log(data.toString())
 
 /* Caso nos segundos for colocado mais de 999, por exemplo, no lugar do 27, fosse 1000, o js corrigiria pois ja iria considerar 1 segundo e isso não existe */
@@ -45,10 +45,37 @@ const dat = new Date('2019-04-20 20:20:59');
 
 const Data = new Date('2019-04-20 20:17:59.100');
 console.log('Dia', data.getDate()); // numero do dia no mês
-console.log('Mês', data.getMonth() + 1);
+console.log('Mês', data.getMonth() + 1); // deixa no numero correto
 console.log('Ano', data.getFullYear());
 console.log('Hora', data.getHours());
 console.log('Min', data.getMinutes());
 console.log('Seg', data.getSeconds());
 console.log('Ms', data.getMilliseconds());
 console.log('Dia Semana', data.getDay()); // numero do dia na semana| 0 é domingo e 6 é sabado 
+
+// new Date é pata data porem uma maneira para ver do marco 0 ate a data colocada em milessimos de segundo
+
+console.log(Date.now()) // = 1753394730759
+
+// se colocar esse milesimo de segundos ira dar a data de hoje
+
+
+
+function zeroEsquerda (num)  {
+    return num >= 10 ? num : `0${num}`
+}
+
+
+function formaData(data) {
+    const Dia = zeroEsquerda(data.getDate()); // numero do dia no mês
+    const Mes = zeroEsquerda(data.getMonth() + 1); // deixa no numero correto
+    const Ano = zeroEsquerda(data.getFullYear());
+    const Hora = zeroEsquerda(data.getHours());
+    const Min = zeroEsquerda(data.getMinutes());
+    const Seg = zeroEsquerda(data.getSeconds());
+
+    return `${Dia}/${Mes}/${Ano} ${Hora}:${Min}:${Seg}`;
+}
+
+const DaTa = new Date();
+const dataBrasil = formaData (DaTa); 
