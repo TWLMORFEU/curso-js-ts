@@ -36,5 +36,19 @@ console.log(data.toString())
 // se deixar só o ano ex Date(2019) ele ira considerar como milissemos desegundo
 
 /*
-estrutura - (ano, mes, dia, hora, minuto,) 
+estrutura - (ano, mes, dia, hora, minuto, segundo);
 */
+
+const dat = new Date('2019-04-20 20:20:59'); 
+// forma bastante usada na maioria dos casos
+
+
+const Data = new Date('2019-04-20 20:17:59.100');
+console.log('Dia', data.getDate()); // numero do dia no mês
+console.log('Mês', data.getMonth() + 1);
+console.log('Ano', data.getFullYear());
+console.log('Hora', data.getHours());
+console.log('Min', data.getMinutes());
+console.log('Seg', data.getSeconds());
+console.log('Ms', data.getMilliseconds());
+console.log('Dia Semana', data.getDay()); // numero do dia na semana| 0 é domingo e 6 é sabado 
