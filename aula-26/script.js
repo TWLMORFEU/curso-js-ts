@@ -1,0 +1,28 @@
+// OBJETO DATE
+// const agora = new Date();
+// o marco 0, ele por padrão é = 01/01/1970 Timestamp unix ou época unix
+
+
+// const agora = new Date();
+// console.log(agora.toString());
+// dessa maneira ira mostrar o momento específico de quando iniciado
+
+
+// const tresHoras = 60 * 60 * 3 * 1000;
+// valor de 3h em milisegundos sendo:
+/*
+60 - segundos por minuto
+60 - minutos por segundo
+3 - horas
+1000 - milisegundos por segundo
+RESULTAND0 EM: 10.800.000 milissegundos
+*/
+
+
+// const umDia = 60 * 60 * 24 * 1000; 
+// = 86.400.000 milissegundos
+
+//Número do Mês 1 a menos, janeiro ao invés de ser 1 é 0
+
+const data = new Date(2019, 3, 20, 15, 14, 27);
+console.log(data.toString())
