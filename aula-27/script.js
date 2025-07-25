@@ -73,3 +73,11 @@ function getDiasemanatexto (diaSemana) {
     case 2:  
         diaSemanaTexto = 'Terça';
         return diaSemanaTexto
+    case 3:
+        diaSemanaTexto = 'Quarta';
+        return diaSemanaTexto
+    case 4: 
+        diaSemanaTexto = 'Quinta';
+        return diaSemanaTexto
+    case 5:
+        diaSemanaTexto = 'Sexta';
