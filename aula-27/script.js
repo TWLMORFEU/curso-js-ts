@@ -87,4 +87,10 @@ function getDiasemanatexto (diaSemana) {
     default:
         diaSemanaTexto = ''
     }
- 
+    // esta usando return porque ele é como se fosse o break, porem ele é proprio de funções, substituir não tem problema
+}
+
+// Ja que a função está em seu scopo local, a variavel so existe la dentro e que carrega o valor. para adicionala ao scopo global pode ser:
+
+const diaSemanaTexto = getDiasemanatexto(diaSemana);
+console.log(diaSemana, diaSemanaTexto);
