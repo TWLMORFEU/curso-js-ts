@@ -81,3 +81,10 @@ function getDiasemanatexto (diaSemana) {
         return diaSemanaTexto
     case 5:
         diaSemanaTexto = 'Sexta';
+        return diaSemanaTexto
+    case 6: 
+        diaSemanaTexto = 'Sábado'
+    default:
+        diaSemanaTexto = ''
+    }
+ 
