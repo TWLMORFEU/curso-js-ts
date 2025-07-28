@@ -7,5 +7,20 @@
    font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    display: flex;
+    justify-content: center; 
+    background-color: rgb(48, 78, 105);
+}
 
+#titulo {
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
+    color: rgb(7, 2, 82);
+    padding: 20px;
+    width: 90vw;
+    margin-top: 40px;
+    border-radius: 8px;
+}
 
