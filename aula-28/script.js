@@ -117,5 +117,7 @@ timeStyle: 'short'
 // Se quiser data + hora → toLocaleString()
 // junto nao funciona pois atulamente o js esta mais atualizado
 
-const data = new Date();
-console.log(data.toLocaleDateString('pt-BR', { dateStyle: 'full', timeStyle: 'short' }));
+// const data = new Date();
+// console.log(data.toLocaleDateString('pt-BR', { dateStyle: 'full', timeStyle: 'short' }));
+
+// imprtante ler documentario de linguagem
