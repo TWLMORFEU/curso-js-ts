@@ -53,21 +53,44 @@
 
 
 // scopo de função
-function falaOI () {  // funções tem scopo especial
-    var nome = 'luiz'  
-    console.log(nome);  // funciona  
-}
+// function falaOI () {  // funções tem scopo especial
+//     var nome = 'luiz'  
+//     console.log(nome);  // funciona  
+// }
 
-//console.log(nome);// nao tem como puxar o dado de uma função com varpor exemplo sem esta no scopo da função
-falaOI();
+// //console.log(nome);// nao tem como puxar o dado de uma função com varpor exemplo sem esta no scopo da função
+// falaOI();
 
 
 
-var sobrenome = "Miranda"
-function falai () {
-    console.log(sobrenome); 
-    // a função consegue implementar variaveis proximas 
-}
-// a funcao acessa variaveis vizinhas porem os vizinhos nao podem acessar sua variavel
+// var sobrenome = "Miranda"
+// function falai () {
+//     console.log(sobrenome); 
+//     // a função consegue implementar variaveis proximas 
+// }
+// // a funcao acessa variaveis vizinhas porem os vizinhos nao podem acessar sua variavel
 
-falai();
+// falai();
+
+
+// function nhh () {
+//     if (verd) {
+//         let nome = 'luiz'
+//         var sobrenome = 'lili'
+//     }
+//     console.log(nome) 
+//     // mesmo o var e console separados, o var aparece, pois ele não segue a ordem dos blocos, ja o let ele não aparece 
+// }
+
+// falanhh();
+
+
+console.log(sobrenome);
+// vai da erro pois chamou antes de declarar
+
+var sobrenome = 'Miranda'
+
+/* hosting, funciona apenas com var e nao com let, ela busca em casos assim a declaração quando encontrar ira jogar a declaração la no topo sendo = var sobrenome; onde vai fiar indefinido pois nao tem valor, dai abaixo podera deixar sobrenome = 'miranda'; que dessa forma ele nao mostrara o erro */
+
+
+// pode criar a função e usar ou usar e criar que da na mesma, so nao pode deixar a função dentro de uma variavel
