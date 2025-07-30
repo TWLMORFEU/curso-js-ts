@@ -8,7 +8,7 @@ console.log('O filho de', nome, 'se chama Eduardo.');
 
 
 let sobrenome; // Declarou a variável 
-sobrenome = 'Lima' // Inicializando a variável 
+sobrenome = 'Lima' // Inicializando a variáve
 
 console.log(sobrenome)
 
