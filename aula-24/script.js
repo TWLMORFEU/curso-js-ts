@@ -71,6 +71,28 @@ function getNivelImc (imc) {
   if (imc < 18.5) return nivel[0];
 }
 
+/*
+function getNivelImc(imc) {
+    let nivel;
+
+    if (imc >= 39.9) {
+        nivel = 'Obesidade grau 3';
+    } else if (imc >= 34.9) {
+        nivel = 'Obesidade grau 2';
+    } else if (imc >= 29.9) {
+        nivel = 'Obesidade grau 1';
+    } else if (imc >= 24.9) {
+        nivel = 'Sobrepeso';
+    } else if (imc >= 18.5) {
+        nivel = 'Peso normal';
+    } else {
+        nivel = 'Abaixo do peso';
+    }
+
+    return nivel;
+}// forma diferente
+*/
+ 
 // faz o calculo do imc
 function getImc (peso, altura){
     const imc = peso / altura ** 2;
