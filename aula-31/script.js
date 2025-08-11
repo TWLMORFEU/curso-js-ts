@@ -36,4 +36,5 @@ const {
 } = pessoa;
 console.log(r, numero, endereco);
 
-co
+const { nome, ...resto } = pessoa; // pega o nome e o reserva separado de rest, onde resto captura os valore restantes
+console.log(resto)
