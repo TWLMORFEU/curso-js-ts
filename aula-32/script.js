@@ -34,4 +34,9 @@ for (let i = 0; i <= 10; i++) {
 // par recebe verdadeiro ou falso, se i for % 2 = 0 retorna true, e caso contrário false.
 
 
-
+//                0       1       2
+const frutas = ['Maça', 'Pêra', 'Uva']; /* conforme for adicionando objetos, ira sendo acrescentado ao console abaixo automaticamente */
+for (let i = 0; i < frutas.length; i++) {
+   console.log(frutas[i]);
+}
+//console.log(frutas.length)// tamanho dos indices = 3
