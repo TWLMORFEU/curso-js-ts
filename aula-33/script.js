@@ -4,3 +4,5 @@ const elements = [
     {tag: 'footer', texto: 'Frase 3'},
     {tag: 'section', texto: 'Frase 4'},
 ];
+
+const container = document.querySelector(''.container')
