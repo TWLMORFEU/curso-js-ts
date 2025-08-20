@@ -23,4 +23,4 @@ for (let i = 0; i < elementos.length; i++) {
 container.appendChild(div)
 
 
-/* Em resumo, o código reserva os elementos, com suas tags e textos, logo após ira ocorrer uma repetção, e ao observar, é adicionar o texto dentro dela  */
+/* Em resumo, o código reserva os elementos, com suas tags e textos, logo após ira ocorrer uma repetção, e ao observar, é visível que são realizadas em let a variável, ou seja, a cada repetição ira descer uma casa, desa maneira trocando os valores. Vai criar com o tipo de tag respectivo e logo após adicionar o texto dentro dela  */
