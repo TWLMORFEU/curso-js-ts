@@ -14,9 +14,13 @@ for (let i = 0; i < elementos.length; i++) {
     let { tag, texto } = elementos[i];
     let tagCriada = document.createElement(tag);
     // tagCriada.innerHTML = texto;
-
-    let textoCriado = document.createTextNode(texto)
+    let textoCriado = document.createTextNode(texto);
     div.appendChild(tagCriada);
+    tagCriada.appendChild(textoCriado);
 }
 // ele ira seguir a ordem do primeiro ao último, então quando acabar a primeira, vai para a segunda e assim sucessivamente
+
 container.appendChild(div)
+
+
+/* Em resumo, o código reserva os elementos, com suas tags e textos, logo após ira ocorrer uma repetção, e ao observar, é adicionar o texto dentro dela  */
