@@ -7,7 +7,7 @@ const frutas = ['Pera', 'Maça', 'Uva'];
 // }
 
 for (let i in frutas) {
-    console.log(frutas[i]) // ler os valores do indice = nome das frutas
+    console.log(frutas[i]); // ler os valores do indice = nome das frutas
     // console.log(i);  ler os indices =  0, 1, 2 
 } 
 
@@ -19,10 +19,14 @@ const pessoa = {
     idade: 30
 };
 
-console.log(pessoa.idade) // mostra idade | forma direta
+console.log(pessoa.idade); // mostra idade | forma direta
 
+console.log(pessoa["sobrenome"]); 
+// forma direta, porém bastante útil para pegar o valoronde não sabemos como ele é,  de forma dinâmica dentro do sistema trabalhado
 
-for (let chaves in pessoa) {
-    // console.log(chaves) // indices dentro do objeto = nome, sbrenome, idade
-    console.log(pessoa[chaves]) // ler os valores da pessoa, idade, nome e sobrenome
+for (let chave in pessoa) {
+    // console.log(chave) // indices dentro do objeto = nome, sbrenome, idade
+    //onsole.log(pessoa[chave]) // ler os valores da pessoa, idade, nome e sobrenome
+
+    console.log(chave, pessoa[chave]) // tanto o nome dos indices, quanto o dos valores
 } 
