@@ -32,3 +32,8 @@ nome.forEach(function(valor, indice, array) {
 
 
 
+/*
+For clássico - Geralmente com iteráveis (array ou strings)
+For in - Retorna o indice ou chave (strings, array ou objeto)
+For of - Retorna o valor em si (iteráveis, arrays ou strings)
+*/
