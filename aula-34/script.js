@@ -6,4 +6,16 @@ Window no navegador ele contém todo o navegador dentro dele, como se ele fosse 
 
 
 window.document = html, daí temos um exemplo da árvore, por ser um elemento dentro do outro
+
+Document
+ └── html
+      ├── head
+      │     └── title
+      │            └── "Minha Página"
+      └── body
+            ├── h1
+            │     └── "Bem-vindo"
+            └── p
+                  └── "Esse é um parágrafo"
+
 */
