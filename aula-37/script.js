@@ -15,4 +15,4 @@ console.log(backgroundColorBody)
 
 for (let p of ps) {
     p.style.backgroundColor = backgroundColorBody; // aplica a cor aos paragrafos
-}
+} 
