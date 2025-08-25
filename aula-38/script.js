@@ -1,3 +1,5 @@
+// WHILE e DO WHILE
+
 let controle = 0; // variável de controle 1 até 10
 
 while (controle <= 10) {
