@@ -64,4 +64,4 @@ do {
     console.log(rand);
 } while(rand !== 10);
 // executou o 10 mas terminou 
-// do while mostra o codigo antes de tomar uma ação e while cehca anyt
+// do while mostra o codigo antes de tomar uma ação e while cehca antes
