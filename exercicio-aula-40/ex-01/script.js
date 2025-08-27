@@ -15,3 +15,14 @@ frm.addEventListener("submit", (e) => {
         let ana;
         if (num1 > num2) {
            ana = `${num1} é maior que ${num2}`;
+        } else if (num2 > num1) {
+           ana = `${num2} é maior que ${num1}`;
+        } else {
+           ana = "Ambos os números tem o mesmo valor"
+        }
+
+        resp.innerText = ana;
+    }
+
+    analise(num1, num2);
+})
