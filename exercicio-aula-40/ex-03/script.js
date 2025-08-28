@@ -17,14 +17,18 @@ frm.addEventListener("submit", (e) => {
     const numero = Number(frm.inumero.value);
 
     function FizzBuzz(n) {
-        return "Não é um número válido!";
-    }
+       if (isNaN(n)) {
+           return "Não é um número válido!";
+       }
+      
     
-    if (n % 3 === 0 && n % 5 === 0) return "FizzBuzz";
-    if (n % 3  === 0) return "Fizz";
-    if (n % 5 === 0) return "Buzz";
-    return n;
+    
+        if (n % 3 === 0 && n % 5 === 0) return "FizzBuzz";
+        if (n % 3 === 0) return "Fizz";
+        if (n % 5 === 0) return "Buzz";
+        return n;
 
+    }
     // Monta string com 0 a 100
     let resultado = "";
     for (let i = 0; i <= 100; i++) {
