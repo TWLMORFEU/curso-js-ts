@@ -9,7 +9,7 @@ try {
     console.log(err); // armazena o erro que o programa mencionou
 }
 
-/* Não é bom mencionar os erros internos do programa pois os exibindo ao usuário, além do usuário não compreender bem por não ser uma boa experiência, também pode ser ´potencialmente perigoso quando você está expondo coisas internas do seu programa*/
+/* Não é bom mencionar os erros internos do programa pois os exibindo ao usuário, além do usuário não compreender bem por não ser uma boa experiência, também pode ser potencialmente perigoso quando você está expondo coisas internas do seu programa */
 
 
 
