@@ -19,4 +19,9 @@ frm.addEventListener("submit", (e) => {
     resp.innerText = (ePaisagem(altura, largura));
 });
 
-// Melhoria de código orientada pelo professor.
+// Melhoria de código orientada pelo professor.  
+
+// arrow function 
+
+const epaisagem = (largura, altura) => largura > altura;
+console.log(epaisagem(1920, 1920));
