@@ -6,12 +6,12 @@ const resp = document.querySelector("h3");
 
 
 frm.addEventListener("submit", (e) => {
-    e.preventDefault();
+   e.preventDefault();
 
     const num1 = Number((frm.inum1.value));
     const num2 = Number((frm.inum2.value));
 
-    function analise(num1, num2) {
+      function analise(num1, num2) {
         let ana;
         if (num1 > num2) {
            ana = `${num1} é maior que ${num2}`;
@@ -22,7 +22,42 @@ frm.addEventListener("submit", (e) => {
         }
 
         resp.innerText = ana;
-    }
+      }
 
-    analise(num1, num2);
+   analise(num1, num2);
 })
+
+
+// Melhoria de código orientada pelo professor.
+
+function max(x, y) {
+   if (x > y) {
+      return x;
+   } else {
+      return y;
+   }
+}
+
+console.log
+
+// ---------------------------------
+
+function maax(x, y) {
+   if (x > y) return x;
+   return y;
+}
+
+console.log(max(10, 2));
+
+// ----------------------------------
+
+function maxx(x, y) {
+   return x > y ? x : y;
+}
+
+console.log(max(10, 20));
+
+// ----------------------------------
+
+const mmax = (x, y) => x > y ? x : y;
+console.log(mmax(100, 20));

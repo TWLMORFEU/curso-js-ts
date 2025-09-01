@@ -41,3 +41,6 @@ frm.addEventListener("submit", (e) => {
     // Se quiser mostrar só o número digitado:
     // Resp.innerText = fizzBuzz(numero):
 })
+
+
+// Melhoria de código orientada pelo professor.

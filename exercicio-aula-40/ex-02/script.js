@@ -18,3 +18,5 @@ frm.addEventListener("submit", (e) => {
 
     resp.innerText = (ePaisagem(altura, largura));
 });
+
+// Melhoria de código orientada pelo professor.
