@@ -22,11 +22,11 @@ frm.addEventListener("submit", (e) => {
        }
       
     
-    
-        if (n % 3 === 0 && n % 5 === 0) return "FizzBuzz";
-        if (n % 3 === 0) return "Fizz";
         if (n % 5 === 0) return "Buzz";
         return n;
+        if (n % 3 === 0 && n % 5 === 0) return "FizzBuzz";
+        if (n % 3 === 0) return "Fizz";
+       
 
     }
     // Monta string com 0 a 100
@@ -45,3 +45,4 @@ frm.addEventListener("submit", (e) => {
 
 // Melhoria de código orientada pelo professor.
 
+  
