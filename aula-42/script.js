@@ -26,3 +26,16 @@ try {
     console.log("FINALLY: Eu sempre sou executado");
 }
 
+
+
+// -------------------------------
+
+// quando a condição estiver dentro de uma função é bom verificar invertido
+function retornaHora(data) {
+    if (!(data instanceof Date)) {
+        // só vai ser instância de date elementos que por exemplo obtiver NewDate
+        console.log("Não é");
+    }
+}
+retornaHora(new Date()) // Faz nada pois é uma instância de Date
+retornaHora(); // Mostra (Não é) pois não é uma instância de Date
