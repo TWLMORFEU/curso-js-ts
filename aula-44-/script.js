@@ -9,9 +9,7 @@ const zerar = document.querySelector('.zerar');
 iniciar.addEventListener("click", function(event) {
   event.preventDefault();
 
-  relogio = setInternal(function() {
-    
-  }, 1000);
+  
 });
 
 pausar.addEventListener("click", function(event) {
