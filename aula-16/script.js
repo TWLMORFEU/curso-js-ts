@@ -22,11 +22,11 @@ console.log(pessoal.sobrenome);
 /* Argumento é o valor que vai ser passado ao parametro, o parametro recebe o valor = argumento */
 
 function criaPessoa (nome, sobrenome, idade) { 
-    /* Essa função é uma factory, pis cria e retorna objetos */
+    /* Essa função é uma factory, pois cria e retorna objetos */
     return {
         nome: nome,
         sobrenome: sobrenome, 
-        idade: cidade
+        idade: idade
     };
 }
 
@@ -35,7 +35,7 @@ const pessoa1 = criaPessoa('Adrian', 'Lotus', 19);
 console.log(pessoa1.nome);
 
 function produzPessoa (nome, sobrenome, idade) { 
-   return { nome, sobrenome, idade} /* Essa função é uma factory, pis cria e retorna objetos */
+   return { nome, sobrenome, idade} /* Essa função é uma factory, pois cria e retorna objetos */
 }
  
 pessoa1 = produzPessoa('Adrian', 'Lotus', 19);
@@ -63,7 +63,7 @@ const names1 = {
 
 pessoa1.fala();
 
-/* ${this} = nesse contexto, que se refere ao nome do objetosem mencionar seu nome */
+/* ${this} = nesse contexto, que se refere ao nome do objeto sem mencionar seu nome */
 
 const names2 = {
     nome: 'Luiz',
@@ -96,6 +96,6 @@ names5.fala(); // aparecerá a idade sem mudanças
 
 names5.incrementaIdade(); // Agora que mandou ira mudar 
 
-names5.fala(); // agora foiadicionado + 1
+names5.fala(); // agora foi adicionado + 1
 
 // As funções so executam quando mandam, como se fose varias funcionalidades mas só entram em pratica quando mencionadas
