@@ -20,14 +20,4 @@ Têm estrutura semelhante,
 Serão avaliados da mesma forma (com os mesmos critérios),
 
 Podem ser passados como parâmetro para a função 
-
---------------- OU ENTÂO ---------------
-
-Use uma função só se os dois conteúdos:
-
-Têm estrutura semelhante,
-
-Serão avaliados da mesma forma (com os mesmos critérios),
-
-Podem ser passados como parâmetro para a função
 */

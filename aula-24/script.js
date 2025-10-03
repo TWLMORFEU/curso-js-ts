@@ -49,7 +49,7 @@ frm.addEventListener("submit", (e) => {
 
 // baseado no imc  que vamos receber na funcao. um array com lista de strings
 function getNivelImc (imc) {
-  const nivel = ['Abaixo do peso', 'Peso normal',    'Sobrepeso', 'Obesidade grau 1', 'Obesidade grau 2', 'Obesidade grau 3'];
+  const nivel = ['Abaixo do peso', 'Peso normal', 'Sobrepeso', 'Obesidade grau 1', 'Obesidade grau 2', 'Obesidade grau 3'];
 
 
   // ao inves de checar a logica o range, a checagem esta de trás para frente 
