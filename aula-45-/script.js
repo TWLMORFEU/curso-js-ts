@@ -26,12 +26,22 @@ function limpaInput() {
     inputTarefa.focus(); // Deixa o cursor piscando em (foco) ja pronto para a próxima tarefa 
 }
 
+function criaBotaoApagar(li) {
+  li.innerText += ' ';
+  const botaoApagar = document.createElement('button');
+  botaoApagar.innerText = 'Apagar';
+  //botaoApagar.classList.add('apagar');
+  botaoApagar.setAttribute('class', 'apagar');
+  li.appendChild(botaoApagar);
+}
+
 
 function criaTarefa(textoInput) { // função recebe texto
-    const li = criaLi(); // passa a lista criada à função
-    li.innerText = textoInput; // mostra o valor de acordo com a função
-    tarefas.appendChild(li) // adiciona um li cada vez que o botao for clicado
-    limpaInput(); //após tudo acima ser feito, limpa input
+  const li = criaLi(); // passa a lista criada à função
+  li.innerText = textoInput; // mostra o valor de acordo com a função
+  tarefas.appendChild(li) // adiciona um li cada vez que o botao for clicado
+  limpaInput(); //após tudo acima ser feito, limpa input
+  li.appendChild(botaoApagar);
 }
 
 btnTarefa.addEventListener('click', function() {
