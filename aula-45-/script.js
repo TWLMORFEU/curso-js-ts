@@ -31,7 +31,11 @@ function criaBotaoApagar(li) {
   const botaoApagar = document.createElement('button');
   botaoApagar.innerText = 'Apagar';
   //botaoApagar.classList.add('apagar');
-  botaoApagar.setAttribute('class', 'apagar');
+  botaoApagar.setAttribute('class', 'apagar'); // implementa no botão criado uma classe juntamente com seu valor.
+
+  botaoApagar.setAttribute('title', 'Apagar esta tarefa') // agora o mesmo botão que recebeu a classe apagar, recebeu um titulo
+
+
   li.appendChild(botaoApagar);
 }
 
@@ -39,9 +43,10 @@ function criaBotaoApagar(li) {
 function criaTarefa(textoInput) { // função recebe texto
   const li = criaLi(); // passa a lista criada à função
   li.innerText = textoInput; // mostra o valor de acordo com a função
-  tarefas.appendChild(li) // adiciona um li cada vez que o botao for clicado
+  tarefas.appendChild(li); // adiciona um li cada vez que o botao for clicado
   limpaInput(); //após tudo acima ser feito, limpa input
-  li.appendChild(botaoApagar);
+  criaBotaoApagar(li);
+  salvarTarefas();
 }
 
 btnTarefa.addEventListener('click', function() {
@@ -49,10 +54,39 @@ btnTarefa.addEventListener('click', function() {
 
     criaTarefa(inputTarefa.value);
     // jogando o texto para uma função
-
-    console.log(inputTarefa.value);
-    // capturou o texto
 });
+
+document.addEventListener('click', function(e) {
+  // precisa de um evento para saber onde o botao de apagar foi clicado
+  const el = e.target;
+  
+
+  // se a classe contem o nome apagar...
+  if (el.classList.contains('apagar')) {
+    //console.log(el.parentElement); // mostra o pai do elemento para que exclua o elemento
+
+
+    e.parentElement.remove(); // faz com que o pai do elemento clicado seja excluido
+  }
+});
+
+function salvarTarefas() {
+  //analisar quantos li tem nas tarefas
+
+  const liTarefas = tarefas.querySelectorAll('li');
+  // com isso por enquanto mostra apenas a quantidade de lista criada.
+  const listDeTarefas = [];
+
+  for (let tarefa of liTarefas) {
+    // console.log(tarefa.innerText); o botao apagar acompanha 
+
+    let tarefaTexto = tarefa.innerText;
+    tarefaTexto = tarefaTexto.replace('Apagar', '').trim();
+    // substituiu o apagar por um espaço vazio, e a função trim elimina esse espaço inútil
+    listDeTarefas.push(tarefaTexto);
+  }
+
+}
 
 
 
