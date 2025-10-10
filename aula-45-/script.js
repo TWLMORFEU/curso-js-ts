@@ -67,6 +67,7 @@ document.addEventListener('click', function(e) {
 
 
     e.parentElement.remove(); // faz com que o pai do elemento clicado seja excluido
+    salvarTarefas();
   }
 });
 
@@ -75,7 +76,7 @@ function salvarTarefas() {
 
   const liTarefas = tarefas.querySelectorAll('li');
   // com isso por enquanto mostra apenas a quantidade de lista criada.
-  const listDeTarefas = [];
+  const listaDeTarefas = [];
 
   for (let tarefa of liTarefas) {
     // console.log(tarefa.innerText); o botao apagar acompanha 
@@ -83,17 +84,27 @@ function salvarTarefas() {
     let tarefaTexto = tarefa.innerText;
     tarefaTexto = tarefaTexto.replace('Apagar', '').trim();
     // substituiu o apagar por um espaço vazio, e a função trim elimina esse espaço inútil
-    listDeTarefas.push(tarefaTexto);
+    listaDeTarefas.push(tarefaTexto);
   }
     
   const tarefasJSON = JSON.stringify(listaDeTarefas);
   // pega valores reconhecido como array/objeto e passa para string com intuito de salvar 
 
   localStorage.setItem('tarefas', tarefasJSON);
-  // tarefas = qual ira recuperar o valor 
+  // tarefas = qual ira recuperar o valor
   // tarefasJSON = valor de tudo
 }
 
+function adicionaTarefasSalvas() {
+  const tarefas = localStorage.getItem('tarefas');
+  const listaDeTarefas = JSON.parse(tarefas)
+  console.log(listaDeTarefas);
+
+  for (let tarefa of listaDeTarefas) {
+    criaTarefa(tarefa);
+  }
+}
+adicionaTarefasSalvas();
 
 
 
