@@ -85,7 +85,13 @@ function salvarTarefas() {
     // substituiu o apagar por um espaço vazio, e a função trim elimina esse espaço inútil
     listDeTarefas.push(tarefaTexto);
   }
+    
+  const tarefasJSON = JSON.stringify(listaDeTarefas);
+  // pega valores reconhecido como array/objeto e passa para string com intuito de salvar 
 
+  localStorage.setItem('tarefas', tarefasJSON);
+  // tarefas = qual ira recuperar o valor 
+  // tarefasJSON = valor de tudo
 }
 
 
