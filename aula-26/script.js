@@ -33,7 +33,7 @@ console.log(data.toString())
 
 // se não colocar os dados ele considera 0 em tempo e 1 em data
 
-// se deixar só o ano ex Date(2019) ele ira considerar como milissemos desegundo
+// se deixar só o ano ex Date(2019) ele ira considerar como milissemos de segundo
 
 /*
 estrutura - (ano, mes, dia, hora, minuto, segundo);
