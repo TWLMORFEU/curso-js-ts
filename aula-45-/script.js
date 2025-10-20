@@ -22,8 +22,8 @@ inputTarefa.addEventListener('keypress', function(e) {
 
 
 function limpaInput() {
-    inputTarefa.value = ''; // limpa o valor do input
-    inputTarefa.focus(); // Deixa o cursor piscando em (foco) ja pronto para a próxima tarefa 
+  inputTarefa.value = ''; // limpa o valor do input
+  inputTarefa.focus(); // Deixa o cursor piscando em (foco) ja pronto para a próxima tarefa 
 }
 
 function criaBotaoApagar(li) {
@@ -139,4 +139,17 @@ inputTarefa.addEventListener('keypress', function(e) {
 evento keypress -> pressionar da tecla
 evento keyup -> pressionar e soltar tecla
 evento keydown -> pressionar tecla e ela manter pressionada
+*/
+
+/*
+  Para funções de uma linha, não se utiliza chaves
+
+  '' -> false, então foi uzada avaliação inversa, utiizando ! ou seja se for diferente do valor válido retornar
+
+  O exercício é realizado com micro funções, onde se tem uma tarefa, e ja passa para a próxima
+
+
+  Aplicação de captura de click, em casos de formulário sem form
+
+  
 */
