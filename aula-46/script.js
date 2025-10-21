@@ -36,3 +36,18 @@ setInterval(function() {
 
 
 // Dentro de um objeto 
+const obj = {
+    falar: function() {
+        console.log('Estou falando...');
+    }
+};
+obj.falar();
+
+// ou 
+
+const obj = {
+    falar() {
+        console.log('Estou falando...');
+    }
+};
+obj.falar();
