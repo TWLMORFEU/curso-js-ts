@@ -45,9 +45,9 @@ obj.falar();
 
 // ou 
 
-const obj = {
+const objj = {
     falar() {
         console.log('Estou falando...');
     }
 };
-obj.falar();
+objj.falar();
