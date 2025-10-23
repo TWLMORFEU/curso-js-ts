@@ -60,3 +60,50 @@ funcaaoo(2,10)
 
 funcaaoo(2, undefined, 20); 
 // Esta é a única maneira de chegar ao valor de c, sem alterar o valor padrão de b. (única forma)
+
+
+
+// Atribuição via desestruturação em funções
+
+function deses({ nome, sobrenome, idade }) {
+    console.log(nome, sobrenome, idade);
+}
+let obj = ({ nome: 'Luiz', sobrenome: 'Ótavio', idade: 20 });
+deses(obj);
+
+
+function conta(operador, acumulador, numeros) {
+   console.log(operador, acumulador, numeros);
+}
+
+conta('+', 0, [20, 30, 40, 50]);
+// dessa menira vai aparecer todos os numeros, entretanto a estrutura padrao de array ira tambem [], sem essa estrutura apenas o primeiro número sera mostrado
+
+
+function conta(operador, acumulador, ...numeros) {
+   console.log(operador, acumulador, numeros);
+}
+
+conta('+', 0, 20, 30, 40, 50);
+// Assim a estrutura de array não sera um problema, pois no parâmetro correspondido esta acompanhado de ... que resulta em fornecer tal funcionalidade ao primeiro e aos demais
+
+
+
+
+function conta(operador, acumulador, ...numeros) {
+    for(let numero of numeros) {
+        console.log(numero);
+        if (operador === '+')acumulador += numero;
+        if (operador === '-')acumulador -= numero;
+        if (operador === '*')acumulador *= numero;
+        if (operador === '/')acumulador /= numero;
+    }
+    console.log(acumulador);
+}
+conta('+', 0, 20, 30, 40, 50);
+
+
+
+// IN -> retorna indice
+// OF ->  valor
+// ...Numeros = REst Operator -> onde sempre deve ser o último, ja que tende a aplicar os demais numeros/indices
