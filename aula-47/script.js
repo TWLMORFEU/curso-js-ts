@@ -107,3 +107,32 @@ conta('+', 0, 20, 30, 40, 50);
 // IN -> retorna indice
 // OF ->  valor
 // ...Numeros = REst Operator -> onde sempre deve ser o último, ja que tende a aplicar os demais numeros/indices
+
+
+const contaa = function(operador, acumulador, ...numeros) {
+    console.log(arguments);
+};
+contaa('+', 1, 20, 30, 40, 50);// mostra os indices e valores correspondentes
+
+
+
+// Em arrow function, nao tem arguments
+const jojos = function(operador, acumulador, ...numeros) => {
+    //console.log(arguments); não funciona
+    console.log(operador, acumulador, numeros)
+};
+conta('+', 1, 20, 30, 40, 50);
+
+
+// Arrow functions da esse problema pois tendem a ser mais simples para funcionalidades menos complexas, então não cria um scopo para arguments. Ja a função tradicional cria esse escopo "particular" para arguments objeto que guarda todos os valores passados, mesmo que não estejam nos parâmetros.
+
+
+
+
+
+// solução para arguments em arrow function, modelo moderno 
+
+const contass = (...args) => {
+    console.log(args);
+}; // entretanto nao pode esquecer dos 3 pontos, se não não ira funcionar a funcionaidade do rest operator (...)
+contass('+', 1, 20, 30, 40, 50);
