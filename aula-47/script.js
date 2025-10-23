@@ -44,3 +44,19 @@ fun(2);
 
 
 // B ta assumindo o valor padrao de um parametro. mas caso queira conferir se ele  tem um valor diferente. aao declarar funcao o parametro tem que estar (b = 4, c = 5)
+
+
+
+function funcaaoo(a,  b = 2, c= 4) {
+    console.log(a + b + c);
+}
+funcao(2); 
+// substitui o valor de a pelo 2 e o resto continua com o valor padrão do parâmetro
+
+
+funcaaoo(2,10)
+// Por mais que definiu o valor padrão, ele só sera aplicado, caso não tenha outro. exemplo, no b o 10 é prioridade.
+
+
+funcaaoo(2, undefined, 20); 
+// Esta é a única maneira de chegar ao valor de c, sem alterar o valor padrão de b. (única forma)
