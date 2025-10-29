@@ -11,7 +11,7 @@ console.log(soma(5, 2)); // 7
 function soma2(a, b) {
     console.log(a, b);
 }
-soma2(5, 2);// 7
+soma2(5, 2); // 7
 
 
 
@@ -27,3 +27,8 @@ function criaPessoa(nome, sobrenome) {
 const p1 = criaPessoa('Luiz', 'Otávio');
 
 // mesma coisa de:
+
+const p2 = {
+    nome: 'João',
+    sobrenome
+}
