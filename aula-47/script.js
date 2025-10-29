@@ -117,11 +117,11 @@ contaa('+', 1, 20, 30, 40, 50);// mostra os indices e valores correspondentes
 
 
 // Em arrow function, nao tem arguments
-const jojos = function(operador, acumulador, ...numeros) => {
+const jojos = (operador, acumulador, ...numeros) => {
     //console.log(arguments); não funciona
     console.log(operador, acumulador, numeros)
 };
-conta('+', 1, 20, 30, 40, 50);
+jojos('+', 1, 20, 30, 40, 50);
 
 
 // Arrow functions da esse problema pois tendem a ser mais simples para funcionalidades menos complexas, então não cria um scopo para arguments. Ja a função tradicional cria esse escopo "particular" para arguments objeto que guarda todos os valores passados, mesmo que não estejam nos parâmetros.
