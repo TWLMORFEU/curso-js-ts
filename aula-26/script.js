@@ -53,7 +53,7 @@ console.log('Seg', data.getSeconds());
 console.log('Ms', data.getMilliseconds());
 console.log('Dia Semana', data.getDay()); // numero do dia na semana| 0 é domingo e 6 é sabado 
 
-// new Date é pata data porem uma maneira para ver do marco 0 ate a data colocada em milessimos de segundo
+// new Date é para data porem uma maneira para ver do marco 0 ate a data colocada em milessimos de segundo
 
 console.log(Date.now()) // = 1753394730759
 
