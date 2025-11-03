@@ -36,11 +36,29 @@ function criaCaractreristica(nome, sobrenome, a, p) {
   return {
     nome,
     sobrenome, 
+
+
+    // Getter -> get -> pega valor
+    get nomeCompleto() {
+        return `${this.nome} ${this.sobrenome}`;
+    },
+
+    // setter -> set -> põe valor
+    set nomeCompleto(valor) {
+        valor = valor.split(' '); // split é um separador de string, onde separa a string em um array de acordo com o que você define
+       
+        this.nome = valor.shift() // shift remove o primeiro elemento e retorna sem ele, reduz o tamanho em um
+        this.sobrenome = valor.join(' '); // Join junta todos os elementos do array a uma única string, e oque você definir ira separalos
+        console.log(valor)
+    },
+
     sobre(assunto) {
         return `${this.nome} está ${assunto}.`;
     },
+
     altura: a,
     peso: p,
+
     get imc() {
         const indice = this.peso / (this.altura ** 2);
         return indice.toFixed(2); 
@@ -58,5 +76,3 @@ console.log(p2.imc());
 /*
 Utilizando get = getter atras de imc para mencionala, devera deixar de utilizar os parenteses pois é como se ela virasse um atributo
 */
-
-
