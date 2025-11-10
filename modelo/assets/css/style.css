@@ -47,7 +47,7 @@ body {
 
 .inp {
     display: block;
-   justify-items: center;
+    justify-items: center;
 }
 
 .inp > form > label {
@@ -62,8 +62,8 @@ body {
     padding: 3px;
     background-color: transparent;
     border: 2px solid black;
-    width: 40vw;
-    max-width: 400px;
+    width: 70vw;
+    max-width: 800vw;
     border-radius: 4px;
 }
 
@@ -91,4 +91,14 @@ button:hover {
 
 #relogio {
   font-size: 2.2rem;
+}
+
+
+.calculadora {
+    width: 400px;
+}
+
+.display  {
+   width: 68.8%;
+   height: 40px;
 }
