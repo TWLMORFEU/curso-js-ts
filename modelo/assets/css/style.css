@@ -1,3 +1,8 @@
+
+:root  {
+    --primary-color: rgb(186, 195, 197);
+}
+
 * {
     box-sizing: border-box;
     outline: 0;
@@ -6,5 +11,25 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(215, 222, 255);
+    background: var(--primary-color);
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+}
+
+#relogio {
+  font-size: 2.2rem;
+}
+
+.calculadora {
+    width: 400px;
+}
+
+.display  {
+   width: 68.8%;
+   height: 40px;
 }
