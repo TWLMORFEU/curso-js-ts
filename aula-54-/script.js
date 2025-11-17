@@ -18,12 +18,12 @@ function criaCalculadora() {
            const el = e.target;
 
            if(el.classList.contains('btn-num')) {
-               this. btnParaDisplay();
+               this.btnParaDisplay(el.innerText);
            }
         }.bind(this));
        },
 
-       btnParaDisplay() {
+       btnParaDisplay(valor) {
         
        }
 
@@ -44,3 +44,5 @@ calculadora.inicia();
 /* 
 Para chamar uma chave dentro do objeto, exemplo calculadora e dentro dela executar uma chave deve-se chamar this.cliqueBotoes(); se chamar cliqeBotoes() não ira funcionar
 */
+
+// innerText é o elemento que esta dentro da tag, no caso dentro dos botões
