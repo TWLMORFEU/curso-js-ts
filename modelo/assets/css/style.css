@@ -10,6 +10,10 @@
     outline: 0;
 }
 
+h1 {
+    color: var(--primary-color-darker);
+}
+
 body {
     margin: auto;
     padding: 0;
@@ -65,9 +69,28 @@ form button:hover {
 
 .calculadora {
     width: 400px;
+    display: flex;
 }
 
 .display  {
-   width: 68.8%;
+   font-size: 2em;
+   width: 100%;
    height: 40px;
+}
+
+.btn {
+    width: 24.37%;
+    height: 40px;
+    font-size: 1em;
+    display: inline-block;
+    border: none;
+    color: var(--primary-color-darker);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn:active {
+    background-color: var(--primary-color-darker);
+    color: var(--primary-color);
+    transition: 0.1s;
 }
