@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap');
 
 :root  {
     --primary-color: rgb(186, 195, 197);
+    --primary-color-darker: rgb(88, 93, 94);
 }
 
 * {
@@ -9,9 +11,12 @@
 }
 
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
     background: var(--primary-color);
+    font-family: 'Stack Sans Notch', sans-serif;
+    line-height: 1.5em;
+    
 }
 
 .container {
@@ -19,6 +24,39 @@ body {
     margin: 50px auto;
     background: #fff;
     padding: 20px;
+    border-radius: 14px;
+    justify-items: center;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus {
+    outline: 1px solidvar(--primary-color);
+}
+
+form button {
+    border: none;
+    background: none;
+    color: fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background: var(--primary-color-darker);
 }
 
 #relogio {
