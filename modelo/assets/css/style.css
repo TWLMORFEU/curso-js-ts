@@ -45,7 +45,7 @@ form input {
 }
 
 form input:focus {
-    outline: 1px solidvar(--primary-color);
+    outline: 1px solid var(--primary-color);
 }
 
 form button {
