@@ -1,0 +1,56 @@
+// O this é decidido quando a funçãp é executada
+
+// --Dentro de um objeto--
+const pessoa = {
+    nome: 'Eduardo',
+    falar() {
+        console.log(this.nome); // this → pessoa
+    }
+};
+
+pessoa.falar(); // Eduardo
+ 
+
+
+// --Funções Construtoras(new)--
+function Pessoa(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+}
+
+const p1 = new Pessoa('Eduardo', 17);
+console.log(p1.nome); // Eduardo
+//Sem o new, o this mudaria e daria erro.
+
+
+// --Eventos no DOM--
+// Quando você usa um evento de clique, por exemplo, o this aponta para o elemento HTML que disparou o evento.
+button.addEventListener('click', function() {
+    console.log(this); // O botão que foi clicado
+});
+
+
+// Arrow Functions → NÃO criam this próprio
+// Arrow functions herdam o this do local onde foram criadas
+const pessoa = {
+    nome: 'Eduardo',
+    falar: () => {
+        console.log(this.nome); // ERRO! this não é o objeto pessoa
+    }
+};
+
+pessoa.falar(); // undefined
+
+
+
+
+/* Como controlar o this manualmente?
+
+Podemos usar:
+
+bind() → amarra o this para sempre
+
+call() → chama função passando o this
+
+apply() → igual ao call, mas com array
+*/
