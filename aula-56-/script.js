@@ -57,11 +57,9 @@ function Calculadora() {
     };
    
 
-    this.btnParaDisplay = function(valor) {
-        this.display.value += valor;
+    this.btnParaDisplay = valor => this.display.value += valor;
 
-    };
-}
+};
 
 const calculadora = new Calculadora();
 calculadora.inicia();
