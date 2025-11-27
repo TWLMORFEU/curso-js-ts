@@ -46,3 +46,26 @@ console.log(g3.next().value);
 console.log(g3.next().value);
 console.log(g3.next().value);
 console.log(g3.next().value);
+
+// ----------------------------
+
+function* geradora4() {
+    yield 0;
+    yield 1;
+    yield 2;
+}
+
+function* g4() {
+    yield* geradora4();
+    yield 3;
+    yield 4;
+    yield 5;
+}
+
+
+const ger4 = g4();
+
+
+for(let valor of ger4) {
+    console.log(valor);
+}
