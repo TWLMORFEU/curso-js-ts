@@ -1,0 +1,14 @@
+// Tipos de funções, e como cada uma se encaixa melhor
+
+
+
+
+
+Função normal (declaração padrão)
+function somar(a, b) {
+  return a + b;
+}
+
+**** Use quando: quer criar uma função simples e reutilizável.
+
+
