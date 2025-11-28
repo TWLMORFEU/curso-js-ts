@@ -113,3 +113,22 @@ p1.falar();
 
 - Use quando: precisa criar vários objetos com lógica especial.
 - Boa para modularização — MUITO usada em projetos reais.
+
+
+
+
+-------Funções Construtoras-------
+
+- Parecida com a factory, mas otimizada para performance.
+- Mais próxima da orientação a objetos (OO).
+
+function Pessoa(nome, idade) {
+  this.nome = nome;
+  this.idade = idade;
+}
+
+const p1 = new Pessoa('Eduardo', 18);
+
+
+- Use quando: precisa criar muitos objetos e performance importa.
+- Melhor com prototype → economiza memória.
