@@ -5,6 +5,10 @@
 
 
 ------Função normal (declaração padrão)-----
+
+-Melhor para tarefas gerais.
+-Boa legibilidade.
+-Ideal quando o código precisa ser reusado várias vezes.
 function somar(a, b) {
   return a + b;
 }
@@ -15,6 +19,9 @@ function somar(a, b) {
 
 
 ------Escopo Léxico-------
+
+-A função enxerga variáveis de fora dela.
+-O escopo é decidido no momento da criação, não da execução.
 function externa() {
   const nome = 'Eduardo';
 
@@ -24,7 +31,30 @@ function externa() {
 
   interna();
 }
-quando: precisa acessar variáveis externas sem passá-las como parâmetro.
+Use quando: precisa acessar variáveis externas sem passá-las como parâmetro.
+
+
+
+
+-------Closure------
+
+-Permite guardar valores na memória, mesmo após a função “acabar”.
+-Cria variáveis privadas (ninguém acessa de fora).
+function contador() {
+  let num = 0;
+
+  return function() {
+    num++;
+    console.log(num);
+  };
+}
+
+const c = contador();
+c(); // 1
+c(); // 2
+c(); // 3
+Use quando: quiser proteger dados ou preservar valores.
+Muito usado para segurança, performance e encapsulamento.
 
 
 
