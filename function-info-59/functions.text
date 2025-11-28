@@ -176,3 +176,22 @@ console.log(g.next().value); // 2
 
 - Use quando: quiser controlar passo a passo o código
 - Útil em simulações, jogos, fluxos lógicos, leitura de dados grandes…
+
+
+
+
+
+
+
+
+****************** RESUMO *****************
+
+Precisa de…	                        Melhor função
+Executar um código só uma vez   	IIFE
+Criar objetos com lógica	        Factory
+Criar muitos objetos iguais	        Construtora
+Controlar uma ação no tempo	        Callback
+Criar memória privada	            Closure
+Repetição inteligente	            Recursiva
+Controle total da execução	        Geradora
+Função simples e geral	            Declaração normal
