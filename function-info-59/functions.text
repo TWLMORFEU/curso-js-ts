@@ -132,3 +132,24 @@ const p1 = new Pessoa('Eduardo', 18);
 
 - Use quando: precisa criar muitos objetos e performance importa.
 - Melhor com prototype → economiza memória.
+
+
+
+
+
+--------Função Recursiva-------
+
+- Quando uma função chama ela mesma.
+- Substitui laços de repetição em problemas complexos.
+
+function contagem(n) {
+  if (n === 0) return;
+  console.log(n);
+  contagem(n - 1);
+}
+
+contagem(5);
+
+
+- Use quando: o problema pode ser dividido em partes menores.
+- Árvores, fatorial, estruturas matemáticas.
