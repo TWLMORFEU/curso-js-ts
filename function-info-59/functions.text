@@ -4,11 +4,27 @@
 
 
 
-Função normal (declaração padrão)
+------Função normal (declaração padrão)-----
 function somar(a, b) {
   return a + b;
 }
 
 **** Use quando: quer criar uma função simples e reutilizável.
+
+
+
+
+------Escopo Léxico-------
+function externa() {
+  const nome = 'Eduardo';
+
+  function interna() {
+    console.log(nome); // Enxerga por escopo léxico
+  }
+
+  interna();
+}
+quando: precisa acessar variáveis externas sem passá-las como parâmetro.
+
 
 
