@@ -153,3 +153,26 @@ contagem(5);
 
 - Use quando: o problema pode ser dividido em partes menores.
 - Árvores, fatorial, estruturas matemáticas.
+
+
+
+
+
+--------Funções geradoras--------
+
+- Permitem pausar e continuar a execução.
+- Controle TOTAL do fluxo (yield).
+
+function* gerador() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+
+const g = gerador();
+console.log(g.next().value); // 1
+console.log(g.next().value); // 2
+
+
+- Use quando: quiser controlar passo a passo o código
+- Útil em simulações, jogos, fluxos lógicos, leitura de dados grandes…
