@@ -74,3 +74,19 @@ fazerAlgo(() => console.log('Feito!'));
 
 - Use quando: algo depende de outra ação (eventos, tempo, carregamento…).
 - Muito usado em JavaScript assíncrono.
+
+
+
+
+-------IIFE — Função Imediata-------
+
+- Executa imediatamente.
+- Protege escopo (cria um “mundo fechado”).
+
+(function() {
+  const nome = 'Eduardo';
+  console.log(nome);
+})();
+
+
+- Use quando: quer rodar código sem poluir o escopo global.
