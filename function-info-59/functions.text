@@ -90,3 +90,26 @@ fazerAlgo(() => console.log('Feito!'));
 
 
 - Use quando: quer rodar código sem poluir o escopo global.
+
+
+
+------Factory Function------
+- Cria objetos com lógica interna e dados protegidos (privados).
+- Flexível — não depende de new.
+
+function criaPessoa(nome, idade) {
+  return {
+    nome,
+    idade,
+    falar() {
+      console.log(`Olá! Meu nome é ${nome}`);
+    }
+  };
+}
+
+const p1 = criaPessoa('Eduardo', 18);
+p1.falar();
+
+
+- Use quando: precisa criar vários objetos com lógica especial.
+- Boa para modularização — MUITO usada em projetos reais.
