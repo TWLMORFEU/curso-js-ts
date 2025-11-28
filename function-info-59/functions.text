@@ -6,22 +6,22 @@
 
 ------Função normal (declaração padrão)-----
 
--Melhor para tarefas gerais.
--Boa legibilidade.
--Ideal quando o código precisa ser reusado várias vezes.
+- Melhor para tarefas gerais.
+- Boa legibilidade.
+- Ideal quando o código precisa ser reusado várias vezes.
 function somar(a, b) {
   return a + b;
 }
 
-**** Use quando: quer criar uma função simples e reutilizável.
+- Use quando: quer criar uma função simples e reutilizável.
 
 
 
 
 ------Escopo Léxico-------
 
--A função enxerga variáveis de fora dela.
--O escopo é decidido no momento da criação, não da execução.
+- A função enxerga variáveis de fora dela.
+- O escopo é decidido no momento da criação, não da execução.
 function externa() {
   const nome = 'Eduardo';
 
@@ -31,7 +31,7 @@ function externa() {
 
   interna();
 }
-Use quando: precisa acessar variáveis externas sem passá-las como parâmetro.
+- Use quando: precisa acessar variáveis externas sem passá-las como parâmetro.
 
 
 
@@ -53,8 +53,24 @@ const c = contador();
 c(); // 1
 c(); // 2
 c(); // 3
-Use quando: quiser proteger dados ou preservar valores.
-Muito usado para segurança, performance e encapsulamento.
+- Use quando: quiser proteger dados ou preservar valores.
+- Muito usado para segurança, performance e encapsulamento.
 
 
 
+
+-------Callback-------
+
+- Uma função passada como argumento para outra.
+- Útil para eventos, ações do usuário, espera de tempo, AJAX…
+
+function fazerAlgo(callback) {
+  console.log('Fazendo...');
+  callback(); // executa depois
+}
+
+fazerAlgo(() => console.log('Feito!'));
+
+
+- Use quando: algo depende de outra ação (eventos, tempo, carregamento…).
+- Muito usado em JavaScript assíncrono.
