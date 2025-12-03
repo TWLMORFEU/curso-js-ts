@@ -39,3 +39,22 @@ console.log(Animais.length); // 3 pis tem 3 elementos
 // o .pop() elimia o ultimo elemento do array
 // .push(tadeu) adiciona um indice 
 // mais usados
+
+
+
+
+// Valor por referencia
+//                0      1        2       3     4   
+const naames = ['Edu', 'Maria', 'Joana', 'ana', 'vini']
+const novos = naames.slice(1, 3); // maria e joana, -1, -2, e etc retira o elemento
+console.log(naames); 
+
+
+// convetendo string em array
+
+const nome = 'Marcos Vinicius Badaro'; // string, como separar ?
+const names = nome.split(' '); // separa cada um como elemento individual 
+console.log(names)
+
+
+// .join(' ') junta todos os elementos em uma unica string, e escolendo entre '' oque ira estar entre cada uma delas 
