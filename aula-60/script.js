@@ -11,13 +11,10 @@ console.log(nomes);
 
 const animais = [] //  array literal
 
-
-
 const sobrenomes = new Array('Silva, Vieira, Castro'); // Array Construtor
 nomes[2] = 'Ferrari';
 delete sobrenomes[2];
 console.log(sobrenomes)
-
 
 
 //               0         1        2
