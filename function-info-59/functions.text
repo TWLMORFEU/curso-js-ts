@@ -38,8 +38,8 @@ function externa() {
 
 -------Closure------
 
--Permite guardar valores na memória, mesmo após a função “acabar”.
--Cria variáveis privadas (ninguém acessa de fora).
+- Permite guardar valores na memória, mesmo após a função “acabar”.
+- Cria variáveis privadas (ninguém acessa de fora).
 function contador() {
   let num = 0;
 

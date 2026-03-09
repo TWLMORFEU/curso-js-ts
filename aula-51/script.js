@@ -7,8 +7,6 @@ function rand(min = 1000, max = 3000) {
   return Math.floor(num);
 }
 
-
-
 function f1(Callback) {
   setTimeout(function() {
     console.log('f1');
@@ -29,7 +27,6 @@ function f3(Callback) {
     if (Callback) Callback()
   }, rand());
 }
-
 
 f1(f1Callback);
 
