@@ -30,7 +30,7 @@ const Animais = ['cachorro', 'leão', 'capivara']
 console.log(Animais.length); // 3 pis tem 3 elementos
 
 // .unshift(josé) adiciona no começo
-// .shift() tira o primeiro elemento do rray e os demais substituem a casa do outro o 3 vira 2 e 2 vira 1. Não recomendado para arrays grandes
+// .shift() tira o primeiro elemento do rray e os demais substituem a casa do outro o 3 vira 2 e 2 vira 1. Não recomendado para arrays grandes pode ocorrer prblemas de performance
 
 
 // o .pop() elimia o ultimo elemento do array
