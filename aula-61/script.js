@@ -34,25 +34,25 @@ console.log(resgatados, doentes);
 // Simular pop
 resgatados.splice(-1 , 1);
 console.log(resgatados)
-// Remove o último
+// Remove do último
 
 
 
 // Simular shift
 resgatados.splice(0,1);
 console.log(resgatados);
-// Remove o primeiro
+// Remove do início
 
 
 
 // Simular push 
-resgatados.splice(0, 0, 'Luiza');
+resgatados.splice(-1, 1, 'Luiza');
 console.log(resgatados);
-// Adiciona no início
+// Adiciona do início
 
 
 
 // Simular unshift 
-resgatados.splice(-1, 1, 'Maria');
+resgatados.splice(0, 0, 'Maria');
 console.log(resgatados);
-// Adiciona no último
+// Adiciona do último
