@@ -9,8 +9,6 @@ const nomes = ['Maria', 'João', 'Eduardo', 'Gabriel', 'Júlia'];
 // elemen1,2,3... - em fim elementos que quer adicionar separados por vírgula
 
 
-// simular a função pop (remover o último índice)]
-
 //               -4         -3        -2         -1
 //                0          1         2          3          
 const mortos = ["Tadeu", "Benicio", "Marcos", "Juninho"];
@@ -22,4 +20,39 @@ console.log(mortos, mortosRecentes);
 
 
 
+// Agora uma maneira de adicionar itens ao array
+const resgatados = [ "Marlom", "Tulio", "José", "Golias"];
+const doentes = resgatados.splice(3, 0, "Luiz");
+console.log(resgatados, doentes);
+// adiciona no lugar escolhido ao elemento, não a partir, deslocando o restante a uma casa a frente
+// Método splice só restorna oque foi removido, não adicionado
+// Para substitui, ira remover o indice e logo em seguida adicionar
+// Da mesma forma que pode remover mais de um, ode também adicionar mais de umm
 
+
+
+// Simular pop
+resgatados.splice(-1 , 1);
+console.log(resgatados)
+// Remove o último
+
+
+
+// Simular shift
+resgatados.splice(0,1);
+console.log(resgatados);
+// Remove o primeiro
+
+
+
+// Simular push 
+resgatados.splice(0, 0, 'Luiza');
+console.log(resgatados);
+// Adiciona no início
+
+
+
+// Simular unshift 
+resgatados.splice(-1, 1, 'Maria');
+console.log(resgatados);
+// Adiciona no último
