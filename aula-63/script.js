@@ -88,7 +88,7 @@ const pessoasComNomeGrande = pessoas.filter(function(obj) {
 console.log(pessoasComNomeGrande);
 
 const pessoasVelhas  = pessoas.filter(function(obj) {
-   return obj.idade >= 50;
+   return obj.idade > 50;
 });
 console.log(pessoasVelhas);
 
@@ -97,3 +97,17 @@ const pessoasMulheres = pessoas.filter(function(obj) {
 });
 console.log(pessoasMulheres);
 
+// Passando para arrow function
+
+/*const pessoasComNomeGrande = pessoas.filter(obj => obj.nome.length >= 5);
+*/
+
+/*
+const pessoasVelhas = pessoas.filter(obj => obj.idade > 50); 
+*/
+
+/*
+const pessoasMulheres = pessoas.filter(obj => obj.nome.toLowerCase().endsWith('a'));
+*/
+
+// se houver {} precisa usar return 
