@@ -69,6 +69,31 @@ const numerosFimp = impares.filter((valor, indice, array) => {
 console.log(numerosFimp);
 
 
+// Retorne as pessoas que tem o nome com 5 letras ou mais 
+// Retorne as pessoas com mais de 50 anos
+// Retorne as pessoas cujo nome termina com a
 
+const pessoas = [
+   {nome: 'Luiz', idade: 62},
+   {nome: 'Davi', idade: 23},
+   {nome: 'Maria', idade: 55},
+   {nome: 'Junin', idade: 19}, 
+   {nome: 'Tonho', idade: 32},
+   {nome: 'Pamela', idade: 47},
+];
+// Filter mantém o array original, mas cria outro array
+const pessoasComNomeGrande = pessoas.filter(function(obj) {
+   return obj.nome.length >= 5;
+});
+console.log(pessoasComNomeGrande);
 
+const pessoasVelhas  = pessoas.filter(function(obj) {
+   return obj.idade >= 50;
+});
+console.log(pessoasVelhas);
+
+const pessoasMulheres = pessoas.filter(function(obj) {
+   return obj.nome.toLowerCase().endsWith('a');
+});
+console.log(pessoasMulheres);
 
