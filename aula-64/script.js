@@ -14,6 +14,20 @@ const numeroEmdobro = numeros.map(function(valor, indice, array) {
 const numeroS = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
 const numeroEmDobro = numeroS.map(function(valor) {
    // return `Edu -> ${valor}`;
-   return valor * 2 
+   return valor * 2; 
 });
 console.log(numeroEmDobro);
+
+const pessoas = [
+   {nome: 'Luiz', idade: 62},
+   {nome: 'Davi', idade: 23},
+   {nome: 'Maria', idade: 55},
+   {nome: 'Junin', idade: 19}, 
+   {nome: 'Tonho', idade: 32},
+   {nome: 'Pamela', idade: 47},
+];
+
+const nomes = pessoas.map(function(valor) {
+   return valor.nome;
+});
+console.log(nomes)
