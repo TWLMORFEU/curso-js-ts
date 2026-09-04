@@ -94,3 +94,4 @@ const func2 = g5.next().value;
 func1();
 func2();
 
+// Eu voltei a estudar
